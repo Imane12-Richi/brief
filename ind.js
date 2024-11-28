@@ -12,7 +12,6 @@ function calculateTotal() {
     document.getElementById('total').value = totalPrice.toFixed(2); // Display with two decimal points
 }
 
-// Validation function (unchanged)
 function validateForm() {
     let isValid = true;
 
@@ -57,6 +56,7 @@ function validateForm() {
         document.getElementById('quantityError').textContent = "Veuillez entrer une quantité valide.";
         isValid = false;
     }
+    
 
     // Vérification du total (non nécessaire car calculé dynamiquement)
     return isValid;
