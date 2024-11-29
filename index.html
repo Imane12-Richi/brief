@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Commande de Café Molu</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script> <!-- External JS linked here -->
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Commande de Café Moulu</h1>
+        <form id="orderForm">
+          <div class="form-group">
+              <label for="fullname">Nom et Prénom :</label>
+              <input type="text" id="fullname" name="fullname" >
+              <span id="fullnameError" class="error-message"></span>
+          </div>
+      
+          <div class="form-group">
+              <label for="address">Adresse :</label>
+              <input type="text" id="address" name="address" >
+              <span id="addressError" class="error-message"></span>
+          </div>
+      
+          <div class="form-group">
+              <label for="postalCode">Code Postal :</label>
+              <input type="text" id="postalCode" name="postalCode" >
+              <span id="postalCodeError" class="error-message"></span> <!-- Error message for postal code -->
+          </div>
+      
+          <div class="form-group">
+              <label for="phone">Numéro de Téléphone :</label>
+              <input type="tel" id="phone" name="phone">
+              <span id="phoneError" class="error-message"></span>
+          </div>
+      
+          <div class="form-group">
+              <label for="quantity">Quantité désirée :</label>
+              <input type="number" id="quantity" name="quantity" >
+              <span id="quantityError" class="error-message"></span>
+          </div>
+      
+          <div class="form-group">
+            <label for="total">Total de la commande (en DH) :</label>
+            <output id="total" name="total">0</output>
+            <span id="totalError" class="error-message"></span>
+          </div>
+      
+          <button type="submit">Finaliser la commande</button>
+          
+          <!-- Success message displayed after form submission -->
+          <div id="successMessage" class="success-message" style="display: none;">Commande finalisée avec succès !</div>
+      </form>
+      
+    </div>
+
+</body> 
+</html>

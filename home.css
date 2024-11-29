@@ -77,7 +77,7 @@ nav a {
 .product-info p {
         color: #272626;
         margin-bottom: 25px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
     
     .prix {
@@ -116,80 +116,7 @@ nav a {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
     body {
@@ -201,12 +128,12 @@ nav a {
     footer {
         background-color: #7a5230;
         color: white;
-        padding: 20px 0;
+        padding: 20px 0PX;
         text-align: center;
     }
     
     .footer-container {
-        max-width: 1200px;
+        max-width: 1200px; 
         margin: 0 auto;
         padding: 0 20px;
         display: flex;
