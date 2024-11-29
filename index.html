@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire de Commande de Café Molu</title>
     <link rel="stylesheet" href="index.css">
+    <script src="ind.js" defer></script> <!-- External JS linked here -->
 </head>
 <body>
 
     <div class="form-container">
         <h1>Commande de Café Moulu</h1>
-        <form id="orderForm" onsubmit="return validateForm()">
+        <form id="orderForm">
           <div class="form-group">
               <label for="fullname">Nom et Prénom :</label>
               <input type="text" id="fullname" name="fullname" required>
@@ -25,19 +26,19 @@
       
           <div class="form-group">
               <label for="postalCode">Code Postal :</label>
-              <input type="text" id="postalCode" name="postalCode" required pattern="^\d{5}$">
-              <span id="postalCodeError" class="error-message"></span>
+              <input type="text" id="postalCode" name="postalCode" required>
+              <span id="postalCodeError" class="error-message"></span> <!-- Error message for postal code -->
           </div>
       
           <div class="form-group">
               <label for="phone">Numéro de Téléphone :</label>
-              <input type="tel" id="phone" name="phone" required pattern="^\+?\d{10,15}$">
+              <input type="tel" id="phone" name="phone" required>
               <span id="phoneError" class="error-message"></span>
           </div>
       
           <div class="form-group">
               <label for="quantity">Quantité désirée :</label>
-              <input type="number" id="quantity" name="quantity" required min="1" oninput="calculateTotal()">
+              <input type="number" id="quantity" name="quantity" required min="1">
               <span id="quantityError" class="error-message"></span>
           </div>
       
@@ -48,11 +49,13 @@
           </div>
       
           <button type="submit">Finaliser la commande</button>
+          
+          <!-- Success message displayed after form submission -->
+          <div id="successMessage" class="success-message" style="display: none;">Commande finalisée avec succès !</div>
       </form>
       
     </div>
 
-    <script src="ind.js"></script>
-    
 </body> 
 </html>
+
